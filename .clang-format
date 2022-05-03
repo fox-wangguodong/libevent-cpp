@@ -1,0 +1,228 @@
+#禁用格式化
+DisableFormat: false
+#基本风格样式
+BasedOnStyle: LLVM
+#访问修饰符的缩进偏移量
+AccessModifierOffset: -4
+#当参数超过列限制时,函数参数的换行排列方式
+AlignAfterOpenBracket: Align
+#数组结构体对齐方式
+AlignArrayOfStructures: Right
+#连续赋值语句的对齐方式
+AlignConsecutiveAssignments: None
+#连续位域分隔符的对齐方式
+AlignConsecutiveBitFields: None
+#连续声明语句的对齐方式
+AlignConsecutiveDeclarations: None
+#连续定义宏的对齐方式
+AlignConsecutiveMacros: None
+#转义字符反斜杠的对齐方式
+AlignEscapedNewlines: Right
+#水平对齐二元、三元表达式的操作数
+AlignOperands: Align
+#行末尾的注释对齐
+AlignTrailingComments: true
+#函数调用或初始化时的参数不适合放在一行时，是否允许将所有参数只放在下一行
+AllowAllArgumentsOnNextLine: false
+#已弃用,当构造初始化参数不适合放在一行时，是否允许将所有参数放在下一行
+#AllowAllConstructorInitializersOnNextLine: false
+#函数声明的参数不适合放在一行时，是否允许将所有参数放在下一行
+AllowAllParametersOfDeclarationOnNextLine: false
+#允许将while中的简单代码块收缩为一行
+AllowShortBlocksOnASingleLine: Never
+#允许将switch\case中简单代码块后的的break收缩为一行
+AllowShortCaseLabelsOnASingleLine: false
+#允许在枚举定义后的单行上使用短枚举定义
+AllowShortEnumsOnASingleLine: false
+#允许在简单函数后存放简单代码块
+AllowShortFunctionsOnASingleLine: None
+#允许将在if条件判断的后边存放简单代码块
+AllowShortIfStatementsOnASingleLine: Never
+#允许将lambda函数后存放简单代码块
+AllowShortLambdasOnASingleLine: None
+#允许在循环语句中的简单代码块放在循环语句的同一行
+AllowShortLoopsOnASingleLine: false
+#已弃用,允许在定义返回值类型的后边换行
+#AlwaysBreakAfterDefinitionReturnType: None
+#在函数声明的返回值类型和函数名之间总是另起一行
+AlwaysBreakAfterReturnType: None
+#在多行字符串之前总是另起一行
+AlwaysBreakBeforeMultilineStrings: false
+#在模板声明时,是否在template<>后另起一行
+AlwaysBreakTemplateDeclarations: Yes
+#宏定义属性的一些字符串,这里列举了几个
+#AttributeMacros: [ '__capability', '__output', '__ununsed' ]
+#若为FALSE则函数调用的参数各占一行
+BinPackArguments: false
+#若为FALSE则函数声明或定义的参数各占一行
+BinPackParameters: false
+#位域字段冒号的间距方式
+BitFieldColonSpacing: Both
+
+#设置花括号的风格样式
+BreakBeforeBraces: Custom
+#花括号风格样式的自定义设置,该字段起作用的前提是要设置"BreakBeforeBraces: Custom"
+BraceWrapping:
+  #class定义中左花括号是否独占一行
+  AfterClass: true
+  #控制语句if/for/while/switch...后左花括号独占一行
+  AfterControlStatement: Always
+  #枚举定义时左花括号独占一行
+  AfterEnum: true
+  #函数定义时左花括号独占一行
+  AfterFunction: true
+  #命名空间定义时左花括号独占一行
+  AfterNamespace: true
+  #结构体定义时左花括号独占一行
+  AfterStruct: true
+  #联合体定义时左花括号独占一行
+  AfterUnion: true
+  #extern "C"后左花括号独占一行
+  AfterExternBlock: true
+  #case代码块中左花括号是否独占一行
+  AfterCaseLabel: true
+  #catch语句后的左花括号独占一行
+  BeforeCatch: false
+  #右花括号与else各自独占一行
+  BeforeElse: true
+  #lambda表达式的左花括号独占一行
+  BeforeLambdaBody: true
+  #while前的右花括号独占一行
+  BeforeWhile: true
+  #缩进被包裹的花括号
+  IndentBraces: false
+  #当花括号内为空语句时,将左右花括号分别设置独占一行
+  SplitEmptyFunction: true
+  #当class定义内为空时,将左右花括号分别设置独占一行
+  SplitEmptyRecord: true
+  #当命名空间中为空时,将左右花括号分别设置独占一行
+  SplitEmptyNamespace: true
+#在二元运算符之前进行换行
+BreakBeforeBinaryOperators: None
+#在concept声明之前进行换行
+BreakBeforeConceptDeclarations: true
+#在三元运算符之前进行换行
+BreakBeforeTernaryOperators: true
+#构造函数初始化类成员时的换行方式
+BreakConstructorInitializers: BeforeColon
+#类继承列表的换行方式
+BreakInheritanceList: BeforeColon
+#格式化时允许自动拆分常量字符串(常量字符串长度很多)
+BreakStringLiterals: true
+#要保留的最大连续空行数量
+MaxEmptyLinesToKeep: 2
+#代码每行的列数限制,超过字符数量会触发换行处理,0表示不限制列数
+ColumnLimit: 120
+#匹配注释内容的正则表达式,满足此处列举的正则表达式的注释内容将不会被分割成行或以其它方式更改
+#CommentPragmas: ''
+#多层命名空间并且是连续的,是否要合并为一行
+CompactNamespaces: false
+#已弃用,构造函数初始化列表,要么全部单行显示,要么全部同一行显示
+#ConstructorInitializerAllOnOneLineOrOnePerLine: true
+#构造函数初始化列表的缩进量
+ConstructorInitializerIndentWidth: 0
+#逐级调用时的缩进量
+ContinuationIndentWidth: 8
+#分析格式化文件中最常用的行尾(\r\n或\n).
+DeriveLineEnding: false
+#UseCRLF仅在DeriveLineEnding未设置的情况下作后备参数使用.
+UseCRLF: false
+#如果为真,请分析格式化文件中最常见的&和*对齐方式.
+DerivePointerAlignment: true
+#class或struct的权限修复符后是否要加入空行
+EmptyLineAfterAccessModifier: Never
+#class或struct的权限修饰符之前是否要加入空行
+EmptyLineBeforeAccessModifier: Always
+#自动修复命名空间的注释,若无注释则添加注释
+FixNamespaceComments: true
+#自定义FOR_EACH的宏语句循环
+#ForEachMacros: [ 'FOR_EACH', '...' ]
+#自定义IF的宏语句判断
+#IfMacros: ['IF', '...'']
+#可以将多个#include 块归为一个并根据类别进行划分
+#IncludeBlocks: Preserve
+#访问修饰符额外的缩进数量
+IndentAccessModifiers: false
+#switch\case中代码块的额外的缩进数量
+IndentCaseBlocks: false
+#switch语句中case以及子节点是否缩进
+IndentCaseLabels: true
+#extern "C"中语句的缩进
+IndentExternBlock: Indent
+#goto语句中的label是否缩进
+IndentGotoLabels: false
+#预处理指令是否需要缩进
+IndentPPDirectives: None
+#设置缩进的列数
+IndentWidth: 4
+#若为true,则保留代码块起始的第一行为空行
+KeepEmptyLinesAtTheStartOfBlocks: true
+#命名空间缩进方式
+NamespaceIndentation: None
+#预处理语句缩进的列数
+PPIndentWidth: 2
+#构造函数初始值设定的样式 #PackConstructorInitializers: Never
+#指针*的对齐方式
+PointerAlignment: Left
+#引用&符号的对齐方式
+ReferenceAlignment: Left
+#C\V限定符的对齐方式 #QualifierAlignment: Custom
+#限定符的自定义排列顺序 #QualifierOrder: [ 'inline', 'static', 'type', 'const', 'volatile' ]
+#自动对连续同类型的注释进行重新排序
+ReflowComments: false
+#在c风格转换符后插入空格
+SpaceAfterCStyleCast: true
+#在逻辑非"!"后边插入空格
+SpaceAfterLogicalNot: true
+#在template关键字后插入空格
+SpaceAfterTemplateKeyword: false
+#在赋值操作符前插入空格
+SpaceBeforeAssignmentOperators: true
+#在case语句的冒号前插入空格
+SpaceBeforeCaseColon: false
+#在构造函数初始化参数的冒号前插入空格
+SpaceBeforeCtorInitializerColon: true
+#在类继承的冒号前插入空格
+SpaceBeforeInheritanceColon: true
+#在那些情况下插入空格,这里配置为在控制语句的左花括号前插入空格
+SpaceBeforeParens: ControlStatements
+#在for(:)循环的冒号之前插入空格
+SpaceBeforeRangeBasedForLoopColon: false
+#在左方括号前插入空格
+SpaceBeforeSquareBrackets: false
+#在空代码块的花括号之间插入空格
+SpaceInEmptyBlock: false
+#在空的小括号之间插入空格
+SpaceInEmptyParentheses: false
+#在//注释前插入的空格数量
+SpacesBeforeTrailingComments: 0
+#在模板实例化时参数的左右两侧插入空格
+SpacesInAngles: false
+#在c风格类型转换中,在参数类型的左右两侧插入空格
+SpacesInCStyleCastParentheses: false
+#在容器初始化列表的元素之间插入空格,保证元素间隔
+SpacesInContainerLiterals: false
+#在行注释"//"的后边加入多少空格
+SpacesInLineCommentPrefix:
+  #最少插入的空格数量
+  Minimum: 0
+  #最大插入的空格数量,-1表示禁用最大值
+  Maximum: -1
+#在"("之后,在")"之前插入空格
+SpacesInParentheses: false
+#在"["之后,在"]"之前插入空格
+SpacesInSquareBrackets: false
+#在c++11风格的初始化列表左花括号左侧添加空格
+SpaceBeforeCpp11BracedList: false
+#需要忽略的特殊关键字,像qt中的emit和signal等不属于c++的关键字
+StatementAttributeLikeMacros: [ emit, signal ]
+#应该被解释为类型声明而不是宏调用的宏向量
+TypenameMacros: [ ]
+#对空格敏感且不应该被格式化的宏
+WhitespaceSensitiveMacros: [ ]
+#TAB制表符的宽度
+TabWidth: 4
+#在文件中使用制表符的方式
+UseTab: Never
+#使用c++11的格式设置模板"<>"的间距
+Standard: "c++11"
